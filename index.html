@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutris Pet | Casa de ração e farmácia pet em Tatuí</title>
+  <meta name="description" content="Nutris Pet: rações das marcas que você confia, petiscos, acessórios e farmácia pet em Tatuí, com ajuda na escolha e entrega em casa. Explore a prévia da loja.">
+  <meta name="theme-color" content="#030B4D">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=Nunito:ital,wght@1,900&display=swap">
+  <link rel="preload" as="image" href="assets/nutris-badge.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="preview-bar">
+    <p>
+      <strong>Prévia interativa</strong>
+      <span>Produtos e valores fictícios. Nenhuma cobrança.</span>
+      <a href="checkout.html">Testar checkout <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+    </p>
+  </div>
+
+  <main id="conteudo">
+    <div class="topo">
+      <header class="site-header container">
+        <a class="brand" href="index.html" aria-label="Nutris Pet, início">
+          <img class="brand-badge" src="assets/nutris-badge-176.webp" alt="" width="52" height="52">
+          <span class="brand-word" aria-hidden="true">Nutris<sup>Pet</sup><svg class="brand-swoosh" viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M2 25C80 9 190 3 298 9c1 3-1 6-4 7C190 12 92 17 8 30c-4 1-8-3-6-5z" fill="currentColor"/></svg></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Navegação principal">
+          <a href="#loja">Rações</a>
+          <a href="#farmacia">Farmácia pet</a>
+          <a href="#jeito-nutris">Nosso jeito</a>
+          <button type="button" data-open="contato">Contato</button>
+        </nav>
+
+        <form class="site-search" id="site-search" role="search">
+          <label class="sr-only" for="site-search-input">Buscar na loja</label>
+          <svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg>
+          <input id="site-search-input" type="search" placeholder="O que seu pet precisa?" autocomplete="off">
+          <button class="sr-only" type="submit">Buscar</button>
+        </form>
+
+        <div class="header-actions">
+          <button class="icon-btn icon-btn--dark hide-md" type="button" data-open="favoritos" aria-label="Meus favoritos">
+            <svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg>
+          </button>
+          <button class="icon-btn icon-btn--dark hide-md" type="button" data-open="cantinho" aria-label="Meus pedidos">
+            <svg class="ic" aria-hidden="true"><use href="#i-user"></use></svg>
+          </button>
+          <button class="bag-btn" type="button" data-open="sacola" data-cart-label aria-label="Abrir sacola">
+            <svg class="ic" aria-hidden="true"><use href="#i-bag"></use></svg>
+            <span class="bag-txt">Sacola</span>
+            <span class="bag-count" data-cart-count>0</span>
+          </button>
+          <button class="menu-btn" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+            <svg class="ic" aria-hidden="true"><use href="#i-menu"></use></svg>
+          </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Menu celular">
+          <a href="#loja">Explorar as rações <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></a>
+          <a href="#farmacia">Farmácia pet <svg class="ic" aria-hidden="true"><use href="#i-pill"></use></svg></a>
+          <a href="#jeito-nutris">Nosso jeito <svg class="ic" aria-hidden="true"><use href="#i-shield"></use></svg></a>
+          <button type="button" data-open="favoritos">Favoritos <svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg></button>
+          <button type="button" data-open="cantinho">Meus pedidos <svg class="ic" aria-hidden="true"><use href="#i-package"></use></svg></button>
+          <button type="button" data-open="contato">Vamos conversar <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg></button>
+        </nav>
+      </header>
+
+      <section class="hero container" data-hero aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow--dark"><svg class="ic" aria-hidden="true"><use href="#i-bowl"></use></svg>Casa de ração e farmácia pet em Tatuí</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="hl">Pote cheio,</span>
+            <span class="hl"><span class="tarja-wrap"><span class="tarja">pet feliz.</span><svg class="swoosh" viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M2 25C80 9 190 3 298 9c1 3-1 6-4 7C190 12 92 17 8 30c-4 1-8-3-6-5z" fill="currentColor"/></svg></span></span>
+          </h1>
+          <p class="hero-lead">Rações das marcas que você confia, petiscos, acessórios e farmácia pet. Com ajuda na escolha e entrega em Tatuí.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-red btn-lg" href="#loja">Escolher a ração <svg class="ic" aria-hidden="true"><use href="#i-arrow-down"></use></svg></a>
+            <button class="btn btn-ghost btn-lg" type="button" data-open="contato" data-topic="entrega">Pedir entrega <svg class="ic" aria-hidden="true"><use href="#i-truck"></use></svg></button>
+          </div>
+          <div class="hero-trust">
+            <span class="hero-trust-ic"><svg class="ic" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <p><span>Aqui tem <strong>compromisso de verdade.</strong></span><small>Com o bem-estar do seu animal.</small></p>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="hero-band" aria-hidden="true"></div>
+          <div class="hero-ring" aria-hidden="true"></div>
+          <figure class="hero-badge-wrap">
+            <img class="hero-badge" src="assets/nutris-badge.webp" width="880" height="880" alt="Logo da Nutris Pet com os mascotes: um cachorro caramelo, um gato branco e um passarinho azul" fetchpriority="high">
+          </figure>
+          <span class="float float-bone" aria-hidden="true">
+            <svg viewBox="0 0 200 200"><defs><linearGradient id="hb-bone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD27A"/><stop offset="1" stop-color="#E9962A"/></linearGradient></defs><path d="M54.97 88H145.03A18 18 0 1 1 162 100A18 18 0 1 1 145.03 112H54.97A18 18 0 1 1 38 100A18 18 0 1 1 54.97 88Z" fill="url(#hb-bone)"/><path d="M60 94H140" stroke="#fff" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/></svg>
+          </span>
+          <span class="float float-tile" aria-hidden="true"><svg class="ic"><use href="#i-bowl"></use></svg></span>
+          <span class="float float-paw" aria-hidden="true"><svg class="ic"><use href="#i-paw"></use></svg></span>
+          <div class="hero-tag" aria-hidden="true">
+            <span class="hero-tag-ic"><svg class="ic"><use href="#i-truck"></use></svg></span>
+            <span>Faltou ração?<strong>Pede na Nutris!</strong></span>
+          </div>
+          <p class="hero-caption">Seu melhor amigo. Nosso maior compromisso.</p>
+        </div>
+
+        <a class="scroll-cue" href="#categorias"><span class="scroll-line" aria-hidden="true"></span>Tem mais coisa boa aqui embaixo <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"></use></svg></a>
+      </section>
+    </div>
+
+    <section class="faixa" aria-label="Por que comprar na Nutris">
+      <svg class="faixa-onda" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 56V36C160 16 300 12 470 28c170 16 350 18 540-2C1180 8 1320 0 1440 4v52z" fill="currentColor"/></svg>
+      <ul class="faixa-list container">
+        <li><span class="faixa-ic"><svg class="ic" aria-hidden="true"><use href="#i-truck"></use></svg></span><p><strong>A Nutris leva até você</strong><span>Entregas em Tatuí</span></p></li>
+        <li><span class="faixa-ic"><svg class="ic" aria-hidden="true"><use href="#i-award"></use></svg></span><p><strong>Marcas que você confia</strong><span>Do premium ao super premium</span></p></li>
+        <li><span class="faixa-ic"><svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg></span><p><strong>Ajuda na escolha</strong><span>A ração certa para cada fase</span></p></li>
+        <li><span class="faixa-ic"><svg class="ic" aria-hidden="true"><use href="#i-pill"></use></svg></span><p><strong>Farmácia pet</strong><span>Antiparasitários e medicamentos</span></p></li>
+      </ul>
+    </section>
+
+    <section class="section categorias container" id="categorias" aria-labelledby="cat-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-paw"></use></svg>Do filhote ao sênior</p>
+          <h2 class="h2" id="cat-title">O que vai no pote hoje?</h2>
+        </div>
+        <p class="section-side">Da ração do dia a dia ao antipulgas do mês.</p>
+      </div>
+      <div class="cat-grid" id="cat-grid"></div>
+    </section>
+
+    <section class="loja section" id="loja" aria-labelledby="loja-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-bowl"></use></svg>Direto da nossa prateleira</p>
+            <h2 class="h2" id="loja-title">Do pacotinho de 1 kg<br>ao saco de 15 kg.</h2>
+          </div>
+          <div class="section-side">
+            <p>Escolha com calma.<br>Na dúvida, a gente indica a ração certa.</p>
+            <button class="pill-note" type="button" data-open="previa">Catálogo demonstrativo</button>
+          </div>
+        </div>
+
+        <div class="loja-tools">
+          <div class="chips" id="filter-chips" role="group" aria-label="Filtrar produtos"></div>
+          <label class="sort">
+            <span class="sr-only">Ordenar produtos</span>
+            <select id="product-sort">
+              <option value="destaque">Nossa seleção</option>
+              <option value="menor">Menor preço</option>
+              <option value="maior">Maior preço</option>
+              <option value="nome">Nome: A–Z</option>
+            </select>
+            <svg class="ic" aria-hidden="true"><use href="#i-chevron-down"></use></svg>
+          </label>
+          <div class="loja-search">
+            <label class="sr-only" for="product-search">Pesquisar produtos</label>
+            <svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg>
+            <input id="product-search" type="search" placeholder="Busque uma ração, petisco ou remédio" autocomplete="off">
+            <button type="button" id="product-search-clear" hidden>Limpar</button>
+          </div>
+        </div>
+
+        <p class="sr-only" id="product-status" role="status" aria-live="polite"></p>
+        <div class="grid" id="product-grid"></div>
+        <div class="loja-empty" id="product-empty" hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-search"></use></svg>
+          <p class="loja-empty-t">Nada por aqui com esse nome.</p>
+          <p>Tente outra palavra ou fale com a gente: se a marca não estiver aqui, a Nutris procura para você.</p>
+          <button class="btn btn-blue" type="button" data-open="contato" data-topic="orcamento">Pedir um orçamento</button>
+        </div>
+
+        <div class="loja-foot">
+          <p>Itens ilustrativos para experimentar cada detalhe da loja.</p>
+          <button class="link-help" type="button" data-open="contato" data-topic="racao">Dúvida na escolha? Fale com a gente <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cuidado section" id="farmacia" aria-labelledby="cuidado-title">
+      <div class="container cuidado-grid">
+        <div class="cuidado-visual">
+          <p class="cuidado-label"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"></use></svg>Farmácia pet aberta</p>
+          <div class="cuidado-photo" role="img" aria-label="Ilustração de uma receita veterinária conferida e separada pela farmácia da Nutris">
+            <div class="cp-bg" aria-hidden="true"><span class="cp-band"></span></div>
+            <span class="cp-pill cp-pill-1" aria-hidden="true"></span>
+            <span class="cp-pill cp-pill-2" aria-hidden="true"></span>
+            <div class="rx-card" aria-hidden="true">
+              <div class="rx-head">
+                <span class="rx-mark"><svg class="ic"><use href="#i-plus"></use></svg></span>
+                <p><strong>Receita veterinária</strong><span>Paciente: Thor, 12 kg</span></p>
+              </div>
+              <ul class="rx-lines"><li></li><li></li><li></li><li></li></ul>
+              <div class="rx-foot">
+                <svg class="rx-sign" viewBox="0 0 120 32"><path d="M4 22c10-16 16 8 26-6s14-8 18 2 10-12 18-4 8 10 18 0 14-2 30-6" fill="none" stroke="#0A1250" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <span class="rx-stamp"><svg class="ic"><use href="#i-check"></use></svg>Separado</span>
+              </div>
+            </div>
+            <div class="cuidado-tag" aria-hidden="true">
+              <span class="ct-ic"><svg class="ic"><use href="#i-file"></use></svg></span>
+              <span>Receita?<strong>A gente separa.</strong></span>
+            </div>
+            <p class="cuidado-caption" aria-hidden="true">Na dose que ele precisa.</p>
+          </div>
+        </div>
+
+        <div class="cuidado-copy">
+          <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-plus-tile"></use></svg>Muito além da ração</p>
+          <h2 class="h2" id="cuidado-title">Tem farmácia.<br>Tem orientação.<br><span class="tarja">Tem Nutris.</span></h2>
+          <p class="lead">Além da ração, a Nutris tem farmácia pet com antiparasitários, vermífugos e medicamentos. E gente que ajuda a escolher a apresentação certa para o peso e a idade do seu pet.</p>
+
+          <div class="acc">
+            <div class="acc-item">
+              <h3><button class="acc-btn" type="button" aria-expanded="true" aria-controls="acc-1" id="acc-b1"><svg class="ic" aria-hidden="true"><use href="#i-shield"></use></svg><span class="acc-t">Antiparasitários e vermífugos</span><span class="acc-sign" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="acc-1" role="region" aria-labelledby="acc-b1"><p>Pulgas, carrapatos e vermes: a equipe ajuda a encontrar a apresentação certa pelo peso e pela idade do seu pet, sempre seguindo a orientação do médico-veterinário.</p></div>
+            </div>
+            <div class="acc-item">
+              <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="acc-2" id="acc-b2"><svg class="ic" aria-hidden="true"><use href="#i-file"></use></svg><span class="acc-t">Receita veterinária sem complicação</span><span class="acc-sign" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="acc-2" role="region" aria-labelledby="acc-b2" hidden><p>Mande a foto da receita pela conversa. A equipe confere, separa os itens e avisa quando estiver tudo pronto para retirar ou receber em casa junto com a ração.</p></div>
+            </div>
+            <div class="acc-item">
+              <h3><button class="acc-btn" type="button" aria-expanded="false" aria-controls="acc-3" id="acc-b3"><svg class="ic" aria-hidden="true"><use href="#i-bell"></use></svg><span class="acc-t">Lembrete de reposição</span><span class="acc-sign" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="acc-3" role="region" aria-labelledby="acc-b3" hidden><p>Ração, antipulgas do mês, vermífugo: combine com a equipe e receba um aviso antes de acabar.</p></div>
+            </div>
+          </div>
+
+          <button class="btn btn-blue btn-lg" type="button" data-open="contato" data-topic="farmacia">Falar com a farmácia <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="jeito" id="jeito-nutris" aria-labelledby="jeito-title">
+      <div class="container jeito-in">
+        <svg class="jeito-deco" viewBox="0 0 200 200" aria-hidden="true"><path d="M54.97 88H145.03A18 18 0 1 1 162 100A18 18 0 1 1 145.03 112H54.97A18 18 0 1 1 38 100A18 18 0 1 1 54.97 88Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
+        <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg>Nosso jeito de cuidar</p>
+        <h2 class="h2" id="jeito-title">Bem-estar não é detalhe.<br><span class="tarja">É compromisso.</span></h2>
+        <p class="lead">É por isso que a Nutris fala de nutrição e saúde com responsabilidade. Ração certa, orientação honesta e atenção a cada pet que passa pela loja.</p>
+        <ul class="valores">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-shield"></use></svg>Compromisso</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg>Orientação</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg>Bem-estar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="visita section container" aria-labelledby="visita-title">
+      <div class="visita-card">
+        <div class="visita-copy">
+          <p class="eyebrow eyebrow--dark"><svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg>Do outro lado da tela também tem cuidado</p>
+          <h2 class="h2 h2--light" id="visita-title">Acabou a ração?<br>A Nutris leva até você.</h2>
+          <p class="visita-text">Peça pela conversa, tire uma dúvida sobre a ração ideal ou mande a receita da farmácia. Entregamos em Tatuí.</p>
+          <div class="visita-ctas">
+            <button class="btn btn-red btn-lg" type="button" data-open="contato" data-topic="entrega">Mandar uma mensagem <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg></button>
+            <a class="link-light" href="https://www.instagram.com/nutrispet/" target="_blank" rel="noopener">Nosso Instagram <svg class="ic" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg></a>
+          </div>
+          <p class="visita-end"><svg class="ic" aria-hidden="true"><use href="#i-pin"></use></svg>Rua XI de Agosto, 2661, Tatuí (SP)</p>
+        </div>
+        <div class="visita-art" aria-hidden="true">
+          <svg viewBox="0 0 260 240">
+            <path d="M130 22c58 0 104 40 104 92s-46 92-104 92c-14 0-27-2-39-6l-48 22 12-42c-18-17-29-40-29-66 0-52 46-92 104-92z" fill="none" stroke="#5B8CFF" stroke-width="10" stroke-linejoin="round" opacity=".55"/>
+            <g fill="#CF8747">
+              <circle cx="104" cy="104" r="11"/><circle cx="126" cy="96" r="11"/><circle cx="148" cy="102" r="11"/>
+              <circle cx="116" cy="84" r="10"/><circle cx="138" cy="82" r="10"/><circle cx="160" cy="108" r="9"/><circle cx="92" cy="110" r="9"/>
+            </g>
+            <path d="M74 112h112a56 42 0 0 1-112 0z" fill="#fff"/>
+            <path d="M74 112h112" stroke="#DCE3FF" stroke-width="6" stroke-linecap="round"/>
+            <path d="M100 140c8 10 20 15 30 15" stroke="#E01E1A" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M206 40l4 12 12 4-12 4-4 12-4-12-12-4 12-4z" fill="#FFB21E"/>
+            <path d="M44 150l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#8DB4FF"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="Nutris Pet, início">
+          <img src="assets/nutris-badge-176.webp" alt="" width="48" height="48">
+          <span class="brand-word" aria-hidden="true">Nutris<sup>Pet</sup></span>
+        </a>
+        <p>Rações, medicamentos e acessórios com compromisso.</p>
+        <a class="footer-ig" href="https://www.instagram.com/nutrispet/" target="_blank" rel="noopener" aria-label="Nutris Pet no Instagram"><svg class="ic" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+      </div>
+      <nav aria-labelledby="f-explore">
+        <h2 id="f-explore">Explore</h2>
+        <ul>
+          <li><a href="#loja">Rações e petiscos</a></li>
+          <li><a href="#farmacia">Farmácia pet</a></li>
+          <li><a href="#jeito-nutris">Nosso jeito</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="f-cantinho">
+        <h2 id="f-cantinho">Seu cantinho</h2>
+        <ul>
+          <li><button type="button" data-open="cantinho">Meus pedidos</button></li>
+          <li><button type="button" data-open="favoritos">Favoritos</button></li>
+          <li><button type="button" data-open="acompanhar">Acompanhar pedido</button></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Vamos conversar</h2>
+        <ul>
+          <li><button type="button" data-open="contato">Fale com a Nutris</button></li>
+          <li><button type="button" data-open="previa">Entrega e privacidade</button></li>
+          <li class="footer-addr">Rua XI de Agosto, 2661<br>Tatuí (SP)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Nutris Pet, casa de ração e farmácia pet em Tatuí.</p>
+      <p>Prévia local: nenhum pedido ou pagamento real. Imagens ilustrativas. Use medicamentos sempre com orientação do médico-veterinário.</p>
+    </div>
+  </footer>
+
+  <div class="compare-bar" id="compare-bar" role="region" aria-label="Comparação de produtos">
+    <span id="compare-count">0 de 3 selecionados</span>
+    <button class="btn btn-blue btn-sm" type="button" id="compare-go" disabled>Comparar <svg class="ic" aria-hidden="true"><use href="#i-compare"></use></svg></button>
+    <button class="icon-btn" type="button" id="compare-clear" aria-label="Limpar comparação"><svg class="ic" aria-hidden="true"><use href="#i-x"></use></svg></button>
+  </div>
+
+  <button class="floating-contact" type="button" data-open="contato" aria-label="Fale com a Nutris">
+    <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg><span>Fale com a gente</span>
+  </button>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <noscript><p class="noscript">Ative o JavaScript para explorar a loja, a sacola e o checkout desta prévia.</p></noscript>
+
+  <script src="app.js" defer></script>
+  <script src="hero-badge.js" defer></script>
+</body>
+</html>

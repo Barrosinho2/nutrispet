@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Pacote de ração para filhotes com croquetes pequenos">
+  <defs>
+    <linearGradient id="rf-bag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E07A0C"/>
+      <stop offset=".2" stop-color="#FFB33D"/>
+      <stop offset=".78" stop-color="#FFA524"/>
+      <stop offset="1" stop-color="#D06A06"/>
+    </linearGradient>
+    <linearGradient id="rf-kib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CF8747"/>
+      <stop offset="1" stop-color="#8E4B18"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="250" cy="352" rx="178" ry="15" fill="#0A1566" opacity=".10"/>
+  <ellipse cx="240" cy="340" rx="104" ry="9" fill="#0A1566" opacity=".18"/>
+  <path d="M156 84H324L336 326Q337 342 320 342H160Q143 342 144 326Z" fill="url(#rf-bag)"/>
+  <path d="M156 84 144 326Q143 342 160 342H172L178 84Z" fill="#000" opacity=".1"/>
+  <path d="M302 84 312 342H320Q337 342 336 326L324 84Z" fill="#000" opacity=".08"/>
+  <rect x="164" y="96" width="9" height="226" rx="4.5" fill="#fff" opacity=".25"/>
+  <rect x="150" y="60" width="180" height="30" rx="7" fill="#C2600A"/>
+  <g stroke="#fff" stroke-opacity=".3" stroke-width="2">
+    <path d="M162 64v22M170 64v22M178 64v22M186 64v22M194 64v22M202 64v22M210 64v22M218 64v22M226 64v22M234 64v22M242 64v22M250 64v22M258 64v22M266 64v22M274 64v22M282 64v22M290 64v22M298 64v22M306 64v22M314 64v22"/>
+  </g>
+  <rect x="176" y="126" width="128" height="114" rx="22" fill="#fff"/>
+  <path d="M216 170c-13 2-14 22-11 29 3 7 12 7 15-1 2-7 1-19-1-27z" fill="#C98B3F"/>
+  <path d="M264 170c13 2 14 22 11 29-3 7-12 7-15-1-2-7-1-19 1-27z" fill="#C98B3F"/>
+  <circle cx="240" cy="186" r="25" fill="#F2C27A"/>
+  <ellipse cx="240" cy="200" rx="14" ry="9.5" fill="#FFF0D8"/>
+  <ellipse cx="240" cy="194" rx="6" ry="4.4" fill="#0A1250"/>
+  <circle cx="229" cy="181" r="4.6" fill="#0A1250"/>
+  <circle cx="251" cy="181" r="4.6" fill="#0A1250"/>
+  <circle cx="230.6" cy="179.4" r="1.5" fill="#fff"/>
+  <circle cx="252.6" cy="179.4" r="1.5" fill="#fff"/>
+  <path d="M235 204q5 4 10 0" stroke="#0A1250" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M178 262C212 250 268 248 302 256" stroke="#0029A6" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <rect x="190" y="278" width="100" height="9" rx="4.5" fill="#fff" opacity=".9"/>
+  <rect x="206" y="295" width="68" height="7" rx="3.5" fill="#fff" opacity=".55"/>
+  <circle cx="314" cy="114" r="25" fill="#0029A6"/>
+  <g fill="#fff">
+    <ellipse cx="314" cy="119" rx="7.4" ry="6"/>
+    <circle cx="305.6" cy="110.6" r="3.2"/>
+    <circle cx="310.6" cy="105.6" r="3.2"/>
+    <circle cx="317.4" cy="105.6" r="3.2"/>
+    <circle cx="322.4" cy="110.6" r="3.2"/>
+  </g>
+  <g fill="url(#rf-kib)">
+    <circle cx="350" cy="334" r="9"/>
+    <circle cx="370" cy="342" r="8"/>
+    <circle cx="388" cy="332" r="7"/>
+    <circle cx="122" cy="340" r="8"/>
+    <circle cx="104" cy="332" r="7"/>
+  </g>
+</svg>

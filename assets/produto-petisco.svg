@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" role="img" aria-label="Pacote de petisco bifinho com palitos">
+  <defs>
+    <linearGradient id="pt-bag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#B8130F"/>
+      <stop offset=".22" stop-color="#F0453B"/>
+      <stop offset=".8" stop-color="#E52E25"/>
+      <stop offset="1" stop-color="#A80F0C"/>
+    </linearGradient>
+    <linearGradient id="pt-stick" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C2582A"/>
+      <stop offset="1" stop-color="#7E2E12"/>
+    </linearGradient>
+    <clipPath id="pt-win"><rect x="198" y="164" width="84" height="84" rx="18"/></clipPath>
+  </defs>
+  <ellipse cx="248" cy="352" rx="168" ry="15" fill="#0A1566" opacity=".10"/>
+  <ellipse cx="240" cy="336" rx="80" ry="8" fill="#0A1566" opacity=".18"/>
+  <path d="M182 118H298L306 318Q307 334 291 334H189Q173 334 174 318Z" fill="url(#pt-bag)"/>
+  <rect x="186" y="128" width="8" height="190" rx="4" fill="#fff" opacity=".2"/>
+  <rect x="176" y="96" width="128" height="28" rx="7" fill="#9E0E0B"/>
+  <g stroke="#fff" stroke-opacity=".25" stroke-width="2">
+    <path d="M186 100v20M194 100v20M202 100v20M210 100v20M218 100v20M226 100v20M234 100v20M242 100v20M250 100v20M258 100v20M266 100v20M274 100v20M282 100v20M290 100v20"/>
+  </g>
+  <path d="M184 140H296" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-dasharray="7 5"/>
+  <rect x="198" y="164" width="84" height="84" rx="18" fill="#FFE9D6"/>
+  <g clip-path="url(#pt-win)">
+    <g transform="rotate(-28 240 206)">
+      <rect x="182" y="176" width="116" height="15" rx="7.5" fill="url(#pt-stick)"/>
+      <rect x="182" y="198" width="116" height="15" rx="7.5" fill="url(#pt-stick)"/>
+      <rect x="182" y="220" width="116" height="15" rx="7.5" fill="url(#pt-stick)"/>
+    </g>
+  </g>
+  <rect x="198" y="164" width="84" height="84" rx="18" fill="none" stroke="#fff" stroke-width="3"/>
+  <rect x="196" y="264" width="88" height="34" rx="10" fill="#fff"/>
+  <rect x="208" y="273" width="64" height="7" rx="3.5" fill="#E01E1A"/>
+  <rect x="216" y="285" width="48" height="5" rx="2.5" fill="#F3B5B1"/>
+  <g transform="translate(350 322) rotate(-16)">
+    <rect x="-52" y="-9" width="104" height="18" rx="9" fill="url(#pt-stick)"/>
+    <path d="M-34-9v18M-16-9v18M2-9v18M20-9v18M38-9v18" stroke="#5E200B" stroke-opacity=".4" stroke-width="2.5"/>
+    <rect x="-46" y="-6" width="80" height="4" rx="2" fill="#fff" opacity=".22"/>
+  </g>
+  <g transform="translate(128 334) rotate(10)">
+    <rect x="-42" y="-8" width="84" height="16" rx="8" fill="url(#pt-stick)"/>
+    <path d="M-26-8v16M-8-8v16M10-8v16M28-8v16" stroke="#5E200B" stroke-opacity=".4" stroke-width="2.5"/>
+  </g>
+</svg>

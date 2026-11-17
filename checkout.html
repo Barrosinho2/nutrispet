@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seu pedido | Checkout Nutris Pet</title>
+  <meta name="description" content="Checkout de demonstração da Nutris Pet. Dados fictícios, nenhum pagamento é cobrado.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#030B4D">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&family=Nunito:ital,wght@1,900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="checkout">
+  <script src="data.js"></script>
+  <script src="shared.js"></script>
+
+  <a class="skip-link" href="#checkout-main">Pular para o checkout</a>
+
+  <div class="preview-bar">
+    <p><strong>Checkout de demonstração</strong> <span>Dados fictícios. Nenhum pagamento será cobrado.</span></p>
+  </div>
+
+  <header class="co-header">
+    <div class="container co-header-in">
+      <a class="brand" href="index.html" aria-label="Voltar para a Nutris Pet">
+        <img class="brand-badge" src="assets/nutris-badge-176.webp" alt="" width="52" height="52">
+        <span class="brand-word" aria-hidden="true">Nutris<sup>Pet</sup><svg class="brand-swoosh" viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M2 25C80 9 190 3 298 9c1 3-1 6-4 7C190 12 92 17 8 30c-4 1-8-3-6-5z" fill="currentColor"/></svg></span>
+      </a>
+      <a class="co-back" href="index.html#loja"><svg class="ic" aria-hidden="true"><use href="#i-arrow-left"></use></svg>Continuar explorando</a>
+      <p class="co-secure"><svg class="ic" aria-hidden="true"><use href="#i-lock"></use></svg><span>Seu pedido, passo a passo</span></p>
+    </div>
+  </header>
+
+  <main id="checkout-main" class="container co-main">
+    <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-plus-tile"></use></svg>O próximo cuidado começa aqui</p>
+    <h1 class="co-title">Falta pouco para o <span class="tarja">pote cheio.</span></h1>
+    <p class="co-sub">Você escolhe. A gente separa com atenção e leva até você.</p>
+
+    <ol class="steps" aria-label="Etapas do checkout">
+      <li class="is-current" data-step-li="1"><button class="step-btn" type="button" data-goto="1" aria-current="step"><span class="step-num">01</span><span>Seu contato</span></button></li>
+      <li data-step-li="2"><button class="step-btn" type="button" data-goto="2" disabled><span class="step-num">02</span><span>Entrega</span></button></li>
+      <li data-step-li="3"><button class="step-btn" type="button" data-goto="3" disabled><span class="step-num">03</span><span>Pagamento</span></button></li>
+    </ol>
+
+    <div class="co-grid">
+      <section class="co-card" id="co-panel" aria-label="Dados do pedido">
+
+        <!-- Etapa 1: contato -->
+        <form class="co-step" data-step="1" novalidate>
+          <div class="co-step-head">
+            <span class="co-step-ic"><svg class="ic" aria-hidden="true"><use href="#i-user"></use></svg></span>
+            <div><h2>Primeiro, vamos nos conhecer.</h2><p>Quem vai receber o pedido?</p></div>
+          </div>
+          <div class="form-grid">
+            <div class="field span-2">
+              <label class="field-label" for="f-nome">Seu nome completo</label>
+              <input class="input" id="f-nome" name="nome" autocomplete="name" placeholder="Nome e sobrenome">
+            </div>
+            <div class="field">
+              <label class="field-label" for="f-email">E-mail</label>
+              <input class="input" id="f-email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com">
+            </div>
+            <div class="field">
+              <label class="field-label" for="f-cel">Celular com DDD</label>
+              <input class="input" id="f-cel" name="celular" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="(15) 99999-9999">
+            </div>
+            <div class="field">
+              <label class="field-label" for="f-pet">E o nome do seu pet? <span class="opt">opcional</span></label>
+              <input class="input" id="f-pet" name="pet" placeholder="Queremos conhecer seu melhor amigo">
+            </div>
+            <div class="field">
+              <label class="field-label" for="f-peso">Peso aproximado <span class="opt">opcional</span></label>
+              <input class="input" id="f-peso" name="peso" inputmode="decimal" placeholder="Ex.: 12 kg">
+            </div>
+          </div>
+          <p class="co-tip"><svg class="ic" aria-hidden="true"><use href="#i-scale"></use></svg><span>Com o nome e o peso dele, a equipe confere se a ração e os produtos combinam com o porte do seu pet.</span></p>
+          <div class="co-actions">
+            <button class="co-fill" type="button" data-fill="1"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"></use></svg>Preencher com dados de teste</button>
+            <div class="co-actions-r">
+              <a class="btn btn-outline" href="index.html#loja">Loja</a>
+              <button class="btn btn-blue btn-lg" type="submit">Continuar para entrega <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </div>
+          <p class="co-privacy"><svg class="ic" aria-hidden="true"><use href="#i-lock"></use></svg>Seus dados de contato não são salvos nesta prévia.</p>
+        </form>
+
+        <!-- Etapa 2: entrega -->
+        <form class="co-step" data-step="2" novalidate hidden>
+          <div class="co-step-head">
+            <span class="co-step-ic"><svg class="ic" aria-hidden="true"><use href="#i-truck"></use></svg></span>
+            <div><h2>Como o pedido chega até você?</h2><p>Entrega em Tatuí ou retirada na loja.</p></div>
+          </div>
+          <fieldset>
+            <legend class="co-legend">Escolha uma opção</legend>
+            <div class="choice-grid">
+              <label class="choice is-checked">
+                <input type="radio" name="metodo" value="entrega" checked>
+                <svg class="ic" aria-hidden="true"><use href="#i-truck"></use></svg>
+                <span><strong>Receber em casa</strong><small>Entrega de teste em Tatuí</small></span>
+                <span class="choice-tag" data-frete-label>R$ 9,90</span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="metodo" value="retirada">
+                <svg class="ic" aria-hidden="true"><use href="#i-store"></use></svg>
+                <span><strong>Retirar na loja</strong><small>Rua XI de Agosto, 2661</small></span>
+                <span class="choice-tag">Grátis</span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-grid" data-endereco>
+            <div class="field">
+              <label class="field-label" for="f-cep">CEP</label>
+              <input class="input" id="f-cep" name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="18270-000">
+            </div>
+            <div class="field">
+              <label class="field-label" for="f-cidade">Cidade</label>
+              <input class="input" id="f-cidade" name="cidade" value="Tatuí (SP)" readonly>
+            </div>
+            <div class="field span-2">
+              <label class="field-label" for="f-rua">Rua</label>
+              <input class="input" id="f-rua" name="rua" autocomplete="address-line1" placeholder="Nome da rua">
+            </div>
+            <div class="form-grid grid-3 span-2">
+              <div class="field">
+                <label class="field-label" for="f-bairro">Bairro</label>
+                <input class="input" id="f-bairro" name="bairro" placeholder="Bairro">
+              </div>
+              <div class="field">
+                <label class="field-label" for="f-num">Número</label>
+                <input class="input" id="f-num" name="numero" inputmode="numeric" placeholder="Nº">
+              </div>
+              <div class="field">
+                <label class="field-label" for="f-comp">Complemento <span class="opt">opcional</span></label>
+                <input class="input" id="f-comp" name="complemento" autocomplete="address-line2" placeholder="Casa, apto...">
+              </div>
+            </div>
+          </div>
+          <p class="note" data-retirada hidden><svg class="ic" aria-hidden="true"><use href="#i-clock"></use></svg><span>Você recebe um aviso quando o pedido estiver separado. A retirada é na Rua XI de Agosto, 2661, Tatuí (SP).</span></p>
+          <div class="co-actions">
+            <button class="co-fill" type="button" data-fill="2"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"></use></svg>Preencher com dados de teste</button>
+            <div class="co-actions-r">
+              <button class="btn btn-outline" type="button" data-back>Voltar</button>
+              <button class="btn btn-blue btn-lg" type="submit">Continuar para pagamento <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Etapa 3: pagamento -->
+        <form class="co-step" data-step="3" novalidate hidden>
+          <div class="co-step-head">
+            <span class="co-step-ic"><svg class="ic" aria-hidden="true"><use href="#i-card"></use></svg></span>
+            <div><h2>Como prefere pagar?</h2><p>Pagamento simulado. Nenhum número de cartão é pedido.</p></div>
+          </div>
+          <fieldset>
+            <legend class="co-legend">Forma de pagamento</legend>
+            <div class="choice-grid grid-3">
+              <label class="choice is-checked">
+                <input type="radio" name="pagamento" value="pix" checked>
+                <svg class="ic" aria-hidden="true"><use href="#i-qr"></use></svg>
+                <span><strong>Pix</strong><small>Código gerado na confirmação</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="pagamento" value="cartao">
+                <svg class="ic" aria-hidden="true"><use href="#i-card"></use></svg>
+                <span><strong>Cartão na entrega</strong><small>Maquininha na entrega ou retirada</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="pagamento" value="dinheiro">
+                <svg class="ic" aria-hidden="true"><use href="#i-cash"></use></svg>
+                <span><strong>Dinheiro</strong><small>Diga se precisa de troco</small></span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="field" data-troco hidden>
+            <label class="field-label" for="f-troco">Troco para quanto? <span class="opt">opcional</span></label>
+            <input class="input" id="f-troco" name="troco" inputmode="decimal" placeholder="Ex.: R$ 100,00">
+          </div>
+          <fieldset class="rx-box" data-rx hidden>
+            <legend class="co-legend"><svg class="ic" aria-hidden="true"><use href="#i-file"></use></svg>Receita veterinária</legend>
+            <p class="co-tip">Um item do seu pedido é vendido somente com receita. Como prefere enviar?</p>
+            <div class="choice-grid">
+              <label class="choice is-checked">
+                <input type="radio" name="receita" value="conversa" checked>
+                <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg>
+                <span><strong>Mando pela conversa</strong><small>Depois de confirmar o pedido</small></span>
+              </label>
+              <label class="choice">
+                <input type="radio" name="receita" value="na-hora">
+                <svg class="ic" aria-hidden="true"><use href="#i-file"></use></svg>
+                <span><strong>Apresento na hora</strong><small>Na entrega ou na retirada</small></span>
+              </label>
+            </div>
+          </fieldset>
+          <div class="co-actions">
+            <button class="btn btn-outline" type="button" data-back>Voltar</button>
+            <div class="co-actions-r">
+              <button class="btn btn-red btn-lg" type="submit">Confirmar pedido de teste <svg class="ic" aria-hidden="true"><use href="#i-check"></use></svg></button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Pedido confirmado -->
+        <div class="co-step co-success" data-step="ok" hidden></div>
+
+        <!-- Sacola vazia -->
+        <div class="co-empty" data-empty hidden>
+          <svg class="ic" aria-hidden="true"><use href="#i-bag"></use></svg>
+          <p class="empty-t">Sua sacola está vazia.</p>
+          <p>Escolha uma ração na loja ou use itens de exemplo para testar o checkout.</p>
+          <div class="co-success-ctas">
+            <button class="btn btn-blue btn-lg" type="button" data-sample>Usar itens de exemplo</button>
+            <a class="btn btn-outline btn-lg" href="index.html#loja">Ver a loja</a>
+          </div>
+        </div>
+      </section>
+
+      <aside class="co-summary" aria-labelledby="sum-title">
+        <div class="co-summary-head">
+          <div>
+            <p class="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg>Escolhido com cuidado</p>
+            <h2 id="sum-title">Sua sacola.</h2>
+          </div>
+          <svg class="ic" aria-hidden="true"><use href="#i-bag"></use></svg>
+        </div>
+        <div class="co-items" data-items></div>
+        <div class="co-coupon" data-coupon-box>
+          <label class="field-label" for="f-cupom">Tem um cupom?</label>
+          <form data-coupon novalidate>
+            <input class="input" id="f-cupom" name="cupom" autocomplete="off" placeholder="Use NUTRIS10 para testar">
+            <button class="btn btn-outline" type="submit">Aplicar</button>
+          </form>
+          <p class="co-coupon-msg" data-coupon-msg aria-live="polite"></p>
+        </div>
+        <dl class="co-totals" data-totals></dl>
+        <p class="co-summary-note">Esta é uma prévia. Nenhum valor será cobrado.</p>
+        <p class="co-summary-tag">Um pedido, um pote cheio.</p>
+      </aside>
+    </div>
+
+    <ul class="co-trust">
+      <li><svg class="ic" aria-hidden="true"><use href="#i-shield"></use></svg>Conferência item por item</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg>Uma conversa de distância</li>
+      <li><svg class="ic" aria-hidden="true"><use href="#i-heart"></use></svg>Compromisso Nutris</li>
+    </ul>
+  </main>
+
+  <footer class="co-footer">
+    <div class="container co-footer-in">
+      <p>Nutris Pet: rações, medicamentos e acessórios em Tatuí.</p>
+      <button class="link-help" type="button" data-open="contato">Precisa de ajuda? <svg class="ic" aria-hidden="true"><use href="#i-chat"></use></svg></button>
+    </div>
+  </footer>
+
+  <script src="checkout.js" defer></script>
+</body>
+</html>
